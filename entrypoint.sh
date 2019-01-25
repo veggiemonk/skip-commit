@@ -3,7 +3,7 @@
 # Exit immediately if a command returns a non-zero status.
 set -e
 
-commit_filter=${COMMIT_FILTER:-"\[skip ci\]"}
+commit_filter=${COMMIT_FILTER:-"skip ci"}
 
 # Get last commit message
 last_commit_log=$(git log -1 --pretty=format:"%s")
