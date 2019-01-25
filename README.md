@@ -8,9 +8,9 @@ For example:
 action "Skip" {
   uses = "veggiemonk/skip-commit@master"
   env = {
-    COMMIT_FILTER = "\[skip-ci\]"
+    COMMIT_FILTER = "skip-ci"
   }
 }
 ```
 
-If the last commit message contains the string `[skip-ci]`, the action will stop.
+If the last commit message contains the string `skip-ci`, the action will stop.
