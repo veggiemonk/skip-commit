@@ -10,7 +10,7 @@ last_commit_log=$(git log -1 --pretty=format:"%s")
 
 filter_count=$(echo "$last_commit_log" | grep -c "$commit_filter")
 
-[ "$filter_count" -ne "0" ] && {
+[ "$filter_count" -ne 0 ] && {
   echo "the last commit log \"$last_commit_log\" contains \"$commit_filter\", stopping"
   exit 78
 }
