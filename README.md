@@ -13,4 +13,4 @@ action "Skip" {
 }
 ```
 
-If the last commit message contains the string `skip-ci`, the action will stop.
+#### If the last commit message contains the string `skip-ci`, the action will stop.
