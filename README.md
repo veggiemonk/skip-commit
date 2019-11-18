@@ -5,7 +5,7 @@
 ```yaml
   - name: should it be skipped?
     env:
-      COMMIT_FILTER: "[skip-ci]"
+      COMMIT_FILTER: "skip-ci"
     run: | 
       # Get last commit message
       readonly local last_commit_log=$(git log -1 --pretty=format:"%s")
