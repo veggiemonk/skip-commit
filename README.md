@@ -1,6 +1,18 @@
 # GitHub Actions to skip based on commit message
 
-## Just use bash
+##  Just use YAML
+
+Thank to [@smnbbrv](https://github.com/smnbbrv) who kindly share this solution with us [here](https://github.com/veggiemonk/skip-commit/issues/5)
+
+```yaml
+jobs:
+  main:
+    name: Build and test
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+```
+
+## Just use BASH
 
 ```yaml
   - name: should it be skipped?
@@ -22,7 +34,7 @@
       fi
 ```
 
-## Or use the container
+## Or use the container (not recommended)
 
 If a commit message contains a string defined as the environment variable `$COMMIT_FILTER`, the action will stop.
 
