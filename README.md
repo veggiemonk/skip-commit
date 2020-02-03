@@ -1,6 +1,8 @@
-# GitHub Actions to skip based on commit message
+# GitHub Actions to skip based on commit message (UNMAINTAINED)
 
 If the last commit message contains the string `skip-ci`, the action will stop.
+
+You might want to check out this repository: https://github.com/styfle/cancel-workflow-action
 
 ## Just use YAML (recommended)
 
